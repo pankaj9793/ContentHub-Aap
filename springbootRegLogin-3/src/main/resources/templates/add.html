@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="base :: layout(~{::section})">
+
+<section>
+
+<div class="addd-container">
+
+    <div class="addd-card">
+
+        <h2>Add New Content ✍️</h2>
+
+        <form action="/savePost" method="post">
+
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" name="title" placeholder="Enter title..." required>
+            </div>
+
+            <div class="form-group">
+                <label>Content</label>
+                <textarea name="content" rows="5" placeholder="Write your content..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-save">Save Post</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</section>
+
+</html>

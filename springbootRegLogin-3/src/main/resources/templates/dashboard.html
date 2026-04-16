@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+<html ... th:replace="base :: layout(~{::section})">
+<section>
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">Welcome to Dashboard 🚀</h2>
+
+    <div class="row">
+
+        <!-- Profile Card -->
+        <div class="col-md-4">
+            <div class="card shadow-lg text-center p-3">
+                <h4>👤 Profile</h4>
+                <p>View and manage your profile</p>
+                <a href="/profile" class="btn btn-info w-100">My Profile</a>
+            </div>
+        </div>
+
+        <!-- Add Content Card -->
+        <div class="col-md-4">
+            <div class="card shadow-lg text-center p-3">
+                <h4>➕ Add Content</h4>
+                <p>Create new content easily</p>
+                <a href="/add" class="btn btn-primary w-100">Add Content</a>
+            </div>
+        </div>
+
+        <!-- View Content Card -->
+        <div class="col-md-4">
+            <div class="card shadow-lg text-center p-3">
+                <h4>📂 View Content</h4>
+                <p>Check all your uploaded data</p>
+                <a href="/view" class="btn btn-success w-100">View Content</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+</html>

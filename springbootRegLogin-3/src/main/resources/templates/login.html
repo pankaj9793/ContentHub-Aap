@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="base :: layout(~{::section})">
+
+	  <section>
+
+	  <div class="auth-container">
+
+	      <form action="/loginForm" method="post" class="auth-box">
+
+	          <h2 class="text-center mb-3">Login</h2>
+			  <p th:if="${msg}" th:text="${msg}" class="text-center text-danger"></p>
+
+	          <input type="email" name="email" placeholder="Email" class="form-control mb-2">
+	          <input type="password" name="password" placeholder="Password" class="form-control mb-3">
+
+	          <button class="btn btn-warning w-100">Login</button>
+
+	      </form>
+
+	  </div>
+
+	  </section>
+
+</html>

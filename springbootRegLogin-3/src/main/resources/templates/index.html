@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="base :: layout(~{::section})">
+
+<section>
+	
+
+<div class="hero-section text-center">
+	
+	<h1 class="mb-3">Welcome to ContentHub </h1>
+
+		    <p class="hero-text">
+		        ContentHub is your personal space to create, manage, and explore your ideas effortlessly. 
+		        Here, you can add your own content, organize it in a secure dashboard, and access it anytime, anywhere. 
+		        Whether you're managing notes, sharing thoughts, or building your digital presence, 
+		        this platform gives you full control in a simple and powerful way. 
+		        Start your journey today and turn your ideas into something meaningful.
+		    </p>
+	
+	
+
+    <div class="mt-3">
+        <a th:href="@{/dashboard}" class="btn btn-warning m-2">Get Started</a>
+        <a th:href="@{/about}" class="btn btn-info m-2">Learn More</a>
+    </div>
+
+</div>
+
+
+<div class="container text-center mt-5">
+
+    <h2>Our Features</h2>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <div class="card p-3 add-card">
+                <h5>Add Content</h5>
+                <p>Easily add your posts and manage them.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 delete-card">
+                <h5>Delete Content</h5>
+                <p>Remove unwanted posts anytime.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 dashboard-card">
+                <h5>Secure Dashboard</h5>
+                <p>Your data is safe and secure.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="cta-section text-center mt-5">
+
+    <h2>Start Your Journey Today</h2>
+
+    <a th:href="@{/signup}" class="btn btn-success m-2">Create Account</a>
+    <a th:href="@{/login}" class="btn btn-primary m-2">Login</a>
+
+</div>
+
+</section>
+</html>

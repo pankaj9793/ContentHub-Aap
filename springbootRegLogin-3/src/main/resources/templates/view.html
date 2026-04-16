@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="base :: layout(~{::section})">
+
+<section>
+
+<div class="view-container">
+
+    <h2 class="text-center mb-4">My Posts 📂</h2>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-4" th:each="p : ${posts}">
+
+            <div class="post-card">
+
+                <h4 th:text="${p.title}"></h4>
+
+                <p th:text="${p.content}"></p>
+
+                <a th:href="@{'/delete/' + ${p.id}}" class="btn-delete">Delete</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</html>
